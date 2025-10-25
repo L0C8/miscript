@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MiScript Encryption Test</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MiScript AES Encryption</h1>
+        <div class="form-group">
+            <label for="input">Input:</label>
+            <textarea id="input" placeholder="Enter text to encrypt or decrypt"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter password">
+        </div>
+        <div class="button-group">
+            <div class="password-buttons">
+                <button id="encryptBtn">Encrypt with Password</button>
+                <button id="decryptBtn">Decrypt with Password</button>
+            </div>
+            <div class="key-buttons">
+                <button id="generateKeyBtn">Generate New Key</button>
+                <button id="useKeyBtn" disabled>Encrypt with Key</button>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="output">Output:</label>
+            <textarea id="output" readonly placeholder="Encrypted/Decrypted text will appear here"></textarea>
+        </div>
+        <div id="status"></div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
